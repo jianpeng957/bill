@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutList1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_weight="25"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutList2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutList3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="#FFFF93"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:keepScreenOn="true" >
+
+                <TextView
+                    android:id="@+id/InOrOutItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="12dp"
+                    android:text="类型"
+                    android:textStyle="bold"
+                    android:width="60dip" />
+
+                <TextView
+                    android:id="@+id/ListItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="0dp"
+                    android:text="账目"
+                    android:textStyle="bold"
+                    android:width="60dip" />
+
+                <TextView
+                    android:id="@+id/ListFee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:text="金额"
+                    android:textSize="14dip"
+                    android:textStyle="bold"
+                    android:width="60dip" />
+
+                <TextView
+                    android:id="@+id/ListDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="50dp"
+                    android:text="日期"
+                    android:textSize="14dip"
+                    android:textStyle="bold"
+                    android:width="80dip" />
+                
+                <TextView
+                    android:id="@+id/ListComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="30dp"
+                    android:text="备注"
+                    android:textSize="14dip"
+                    android:textStyle="bold"
+                    android:width="80dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayoutList4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/ListView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center" >
+                    </ListView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutList5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|fill"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/TotalMoney"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFF93"
+            android:paddingLeft="10dp"
+            android:text="总额 -- "
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
